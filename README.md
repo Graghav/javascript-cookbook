@@ -84,6 +84,8 @@ var bar = 'Hello World';
 // concat() method 
 var foo = bar.concat(' Foo');
 console.log(foo); // Displays 'Hello World Foo'
+console.log(foo + 'bar'); // We can also use + operator for concatenation.
+
 
 // charAt() method
 console.log(bar.charAt(1)); // Displays 'e'
@@ -135,3 +137,42 @@ console.log(num.toString()); // Displays '2.489'
 
 
 ```
+
+**Boolean**: Booleans like in any other languages are used for evaluation of conditional expressions. Booleans in JS can be used by using the boolean values `true` and `false`. We can also use the `Boolean` constructor to convert a non-Boolean value to true or false.
+
+```javascript
+
+var bar = true; // bar contains the boolean true
+
+var foo = new Boolean(false); // foo contains the boolean false
+
+```
+
+**Note**: You must be careful while converting a non boolean value to boolean. Strings and Numbers (except 0 and -0) are converted to true, whereas 0, -0, null, false, NaN, undefined, or an empty string are treated as false.
+
+```javascript
+
+var bar = new Boolean('false'); // bar contains true since 'false' is a String
+
+var foo = new Boolean(0); // foo contains false since the argument of the Boolean constructor is 0
+
+if(some String or true) { 
+  
+    // Block is evaluated
+
+}
+
+if(0 or -0 or null or false or undefined) {
+    
+    // Block is not evaluated
+    
+}
+
+```
+
+Since the major purpose of Boolean is for evaluation for conditional expression, it doesn't contain any native methods. However Boolean inherits two methods from `Object` prototype.
+
++ `toString()` - Returns a string representation of the Boolean ('true' or 'false')
++  `valueOf()` - Returns the value of the Boolean (true or false)
+
+**null & undefined**: The JS literal `null` is used to represent an empty value whereas `undefined` represents the value undefined i.e., an unassigned value. It must be noted that the equality operator `==` type converts `null` to `undefined` and hence strict equality operator `===` must be used when null and undefined are needed to be distinguished. This is discussed in detail in *Operators* section.
