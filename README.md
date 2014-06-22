@@ -78,7 +78,7 @@ JS provides a handful of methods to work with Strings.
 
 + `toString()` - Returns the string representation of `this` Object
 
-```javacript
+```javascript
 var bar = 'Hello World';
 
 // concat() method 
@@ -103,6 +103,35 @@ console.log(bar.toLowerCase()); // Displays 'hello world'
 
 // toUpperCase() method
 console.log(bar.toUpperCase()); // Displays 'HELLO WORLD'
+
+
+```
+
+**Note**: String Object has a property called `length` which can be used to return the length of `this` string.
+
+**Number**: Numbers in JavaScript can be created by simply assigning the number to the variable or by using the Number constructor. The Number instance inherits the `Number.prototype` property which provides the following methods,
+
++ `toExponential()` - Returns a string representation of `this` Number in Exponential form
++ `toFixed(len)` - Returns a string representation of `this` Number in Fixed Point notation upto the `len` (automatically rounds off)
++ `toPrecision(precision)` - Returns a string representation of `this` Number upto the specified `precision`
++ `toString()` - Returns a string representation of `this` Number
+
+```javascript
+
+var num = 2.489;
+
+// toExponential() method
+console.log(num.toExponential()); // Displays '2.489e+0'
+
+// toFixed() method
+console.log(num.toFixed()); // Displays '2'
+console.log(num.toFixed(2)); // Displays '2.49'
+
+// toPrecision() method
+console.log(num.toPrecision(2)); // Displays '2.5'
+
+// toString() method
+console.log(num.toString()); // Displays '2.489'
 
 
 ```
