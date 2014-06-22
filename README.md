@@ -6,7 +6,7 @@ javascript-cookbook
 ## Contents
 
 1. [Overview] (#overview)
-2. [Types & Objects] (#types-objects)
+2. [Types & Objects] (#types--objects)
 3. [Arrays] (#arrays)
 4. [Operators] (#operators)
 4. [Condition Expression & Loops] (#condition-expression-loops)
@@ -77,3 +77,32 @@ JS provides a handful of methods to work with Strings.
 + `toUpperCase()` - Returns a string by converting `this` string to Uppercase
 
 + `toString()` - Returns the string representation of `this` Object
+
+```javacript
+var bar = 'Hello World';
+
+// concat() method 
+var foo = bar.concat(' Foo');
+console.log(foo); // Displays 'Hello World Foo'
+
+// charAt() method
+console.log(bar.charAt(1)); // Displays 'e'
+console.log(bar.charAt(7)); // Displays 'o'
+
+// indexOf() method
+console.log(bar.indexOf('Wor',1)); // Displays 6
+
+// replace() method
+console.log(bar.replace('Wor','Go')); // Displays 'Hello Gold'
+
+// split() method
+console.log(bar.split('o')); // Displays the array ["Hell", " W", "rld"]
+
+// toLowerCase() method
+console.log(bar.toLowerCase()); // Displays 'hello world'
+
+// toUpperCase() method
+console.log(bar.toUpperCase()); // Displays 'HELLO WORLD'
+
+
+```
