@@ -176,3 +176,47 @@ Since the major purpose of Boolean is for evaluation for conditional expression,
 +  `valueOf()` - Returns the value of the Boolean (true or false)
 
 **null & undefined**: The JS literal `null` is used to represent an empty value whereas `undefined` represents the value undefined i.e., an unassigned value. It must be noted that the equality operator `==` type converts `null` to `undefined` and hence strict equality operator `===` must be used when null and undefined are needed to be distinguished. This is discussed in detail in *Operators* section.
+
+**Objects**: Objects in Javascript are simply variables with properties. Each property can be viewed as a name-value pair. Objects can be created by using the `Object` constructor or by using the Object Initializer literal `{}`.
+
+```javascript
+var Person = new Object();
+
+Person.firstName = "John";
+Person.lastName = "Doe";
+Person.age = 20;
+```
+
+The above JS code creates an Object named `Person` which has the properties `firstName`,`lastName`,`age`. We can also create the above Object using the Object Initializer literal as follows,
+
+```javascript
+var Person = {
+                firstName : "John",
+                lastName : "Doe",
+                age : 20
+};
+```
+
+**Accessing Object Properties**: We can access the properties of an Object in two ways. One is to use `dot-notation` in the format `ObjectName.propertyName` and the other way is to use `Array notation` in the format `ObjectName['propertyName']`.
+
+```javascript
+console.log(Person.firstName); // Displays 'John'
+console.log(Person['lastName']); // Displays 'Doe'
+```
+
+The `dot-notation` is the commonly used in practice.
+
+Javascript provides a few native methods to work with Objects. 
+
+`Object.keys(objName)` - Returns an array containing the enumerable properties of the Object
+`Object.getOwnProperyNames(objName)` - Returns an array containing the enumerable and non-enumerable properties of the Object
+`for..in` - Used to iterate through the properties of the Object.
+
+```javascript
+console.log(Object.keys(Person)); // Displays ["firstName", "lastName"]
+console.log(Objecy.getOwnPropertyNames(Person)); // Displays ["firstName", "lastName"]
+
+for(prop in Person) {
+    console.log(Person[obj]); // Displays "John" , "Doe"
+}
+```
