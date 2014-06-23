@@ -208,9 +208,9 @@ The `dot-notation` is the commonly used in practice.
 
 Javascript provides a few native methods to work with Objects. 
 
-`Object.keys(objName)` - Returns an array containing the enumerable properties of the Object
-`Object.getOwnProperyNames(objName)` - Returns an array containing the enumerable and non-enumerable properties of the Object
-`for..in` - Used to iterate through the properties of the Object.
++ `Object.keys(objName)` - Returns an array containing the enumerable properties of the Object
++ `Object.getOwnProperyNames(objName)` - Returns an array containing the enumerable and non-enumerable properties of the Object
++ `for..in` - Used to iterate through the properties of the Object.
 
 ```javascript
 console.log(Object.keys(Person)); // Displays ["firstName", "lastName"]
@@ -219,4 +219,24 @@ console.log(Object.getOwnPropertyNames(Person)); // Displays ["firstName", "last
 for(prop in Person) {
     console.log(Person[obj]); // Displays "John" , "Doe"
 }
+```
+
+**Using Constructors**: We can also create our own constructors to instantiate an Object. Object Constructors can be created as follows,
+
+```javascript
+
+function Person(firstName, lastName) {
+    
+    this.firstName = firstName;
+    this.lastName  = lastName;
+}
+
+// Lets create our Objects for Person
+var John = new Person("John","Doe");
+var Foo  = new Person("Foo","Bar");
+
+// Accessing the Object Properties
+console.log(John.firstName); // Displays "John"
+console.log(Foo.lastName); // Displays "Bar"
+
 ```
