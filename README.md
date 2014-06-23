@@ -214,7 +214,7 @@ Javascript provides a few native methods to work with Objects.
 
 ```javascript
 console.log(Object.keys(Person)); // Displays ["firstName", "lastName"]
-console.log(Objecy.getOwnPropertyNames(Person)); // Displays ["firstName", "lastName"]
+console.log(Object.getOwnPropertyNames(Person)); // Displays ["firstName", "lastName"]
 
 for(prop in Person) {
     console.log(Person[obj]); // Displays "John" , "Doe"
