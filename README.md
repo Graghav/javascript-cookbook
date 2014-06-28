@@ -240,3 +240,29 @@ console.log(John.firstName); // Displays "John"
 console.log(Foo.lastName); // Displays "Bar"
 
 ```
+##Arrays
+
+Arrays in Javascript can be created by using the Array Constructor or simply by using the Array initializer `[]`. The arguments to the Array constructor are the elements of the array and passing a single integer defines the size of the array. 
+
+One of the notable features in Javascript Arrays is that We can dynamically change the size of the Array, similar to that of `ArrayList` in Java and also the elements in array can be of different type. The property `length` can be used at any time to access the length of the Array.
+
+```javascript
+
+var myArray = new Array("Hello","World"); // Creates a new Array with elemets "Hello" and "World"
+
+console.log(myArray.length); // Displays 2
+
+console.log(myArray[0]); // Displays "Hello" 
+
+```
+**Note**: Array index starts with 0.
+
+```javascript
+
+var myArray = ["Javascript","Hello","World"]; // Using Array Initializer
+
+console.log(myArray.length); // Displays 3
+
+```
+
+##Array Methods
