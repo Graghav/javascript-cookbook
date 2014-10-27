@@ -266,3 +266,17 @@ console.log(myArray.length); // Displays 3
 ```
 
 ##Array Methods
+
++ `push(element)` - Pushes the `element` to the end of array and returns the new length of the array
++ `pop()` - Pops / Removes the last element from the array and returns that element
++ `shift()` - Removes the first element from the array and returns that element
++ `toString()` - Returns a String representation of the array with the elements separated by comma
++ `join(separator)` - Combines all the elements of the array into a String separated by `separator`
++ `sort()` - Returns an array sorted in order of string Unicode
++ `reverse()` - Reverse the order of elements in the array 
++ `slice(start,end)` - Returns an array with the elements beginning from `start` index to `end` index (without including the last element)
++ `splice(index,num,elements)` - Removes the `num` of elements from `index` and adds the `elements` to the array
++ `indexOf(element,start)` - Searches the array for the `element` starting from `start` and returns the index of the element if found, or `-1` if not found.
++ `concat(arrays)` - Concatenates the elements from two / more arrays specified by `arrays`
+
+
