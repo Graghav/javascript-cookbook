@@ -280,3 +280,44 @@ console.log(myArray.length); // Displays 3
 + `concat(arrays)` - Concatenates the elements from two / more arrays specified by `arrays`
 
 
+##Examples
+
+```javascript
+var a = [1,2,3];
+
+a.push(4); // Inserts 4 to the end of the array
+
+console.log(a);  // Displays [1, 2, 3, 4]
+
+console.log( a.pop() ); // Removes the last element `4` from the array   
+
+console.log( a.reverse() ); // Displays [3, 2, 1]
+
+console.log( a.toString() ); // Displays "3,2,1"
+
+var ascending = a.sort(function(a,b) { return a - b; });
+var descending = a.sort(function(a,b) { return b - a; });
+
+// Here we make use of Closure to the sort() method to perform sorting in ascending / descending order
+console.log(ascending); // Displays [1, 2, 3]
+console.log(descending); // Displays [3, 2, 1]
+
+console.log( a.indexOf(1) ); // Displays 2, the position of element `1` in the array
+
+console.log( a.slice(1,2) ); // Displays [2]
+
+var b = [1,2,3];
+var c = [4,5,6];
+
+console.log( b.concat(c) ); // Displays [1, 2, 3, 4, 5, 6]
+
+``` 
+**Note**: We can also use chaining of methods in Javascript
+
+```javascript
+
+var a = [1,2,3];
+
+console.log( a.reverse().toString() ); // Displays "3,2,1"
+
+```
